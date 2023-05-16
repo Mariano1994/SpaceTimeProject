@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx watch src/server.ts",
+    "lint": "eslint src --ext .ts --fix"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,12 @@
   },
   "homepage": "https://github.com/Mariano1994/SpaceTimeProject#readme",
   "devDependencies": {
+    "@rocketseat/eslint-config": "^1.2.0",
     "@types/node": "^20.1.5",
+    "tsx": "^3.12.7",
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "fastify": "^4.17.0"
   }
 }
